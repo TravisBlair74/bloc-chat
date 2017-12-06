@@ -15,7 +15,7 @@ class User extends Component {
 
   signOut() {
     this.props.firebase.auth().signOut();
-    this.props.setUser({displayName: "Signed Out"});
+    this.props.setUser({displayName: "Guest"});
   }
 
   render() {
